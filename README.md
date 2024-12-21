@@ -5,24 +5,9 @@ tutorial on how to connect the TM1637 7seg display to read CPU temps of a raspbe
 
  **HOW TO USE**
 
- 
 run `pip3 install raspberrypi-tm1637` to download the librarys.
 
+**DESCRIPTION**
 
-make a new python script and copy this code to the file:
+This is a python script that reads the CPU temperature from a raspberry pi4 and displays it on a TM1637 7-segment display
 
-```
-  import tm1637 #import tm1637 module
-
-  import os
-  import time
-
-  TM = tm1637.TM1637(clk=21, dio=20) # Set the GPIO pins
-
-  while True:
-     temp = os.popen("vcgencmd measure_temp").readline() # Reads the CPU temperature from the raspberry pi
-
-     temp_num = int(float(temp.replace("temp=","").replace("'C\n",""))) # Convert the temperature into an integer
-     TM.temperature(temp_num) # Print the temperature to the TM1637 display
-
-     time.sleep(2) #Wait 2 Seconds```
