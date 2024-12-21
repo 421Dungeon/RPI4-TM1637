@@ -1,4 +1,4 @@
-import tm1637 #import tm1637 module
+import tm1637 #Import TM1637 library
 
 import os
 import time
