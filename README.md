@@ -4,7 +4,11 @@ tutorial on how to connect the TM1637 7seg display to read CPU temps of a raspbe
 # **TM1637 CPU TEMPERATURE DISPLAY**
 
  **HOW TO USE**
+
+ 
 run `pip3 install raspberrypi-tm1637` to download the librarys.
+
+
 make a new python script and copy this code to the file:
 
 ```
