@@ -5,7 +5,7 @@ Tutorial on how to connect the TM1637 7-segment display to read CPU temps of a R
 
 > [!IMPORTANT]
 > Run this to download the library for the TM1637 display
-> ```bash
+> ```
 > pip3 install raspberrypi-tm1637
 > ```
 
